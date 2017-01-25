@@ -14,3 +14,22 @@ print("Margfaldaðar=",tala4)
 nafn1=input("Fornafn: ")
 nafn2=input("Eftirnafn: ")
 print("Nei, góðan og blessaða daginn",nafn1,nafn2)
+
+
+#Dæmi 3
+upper=0
+lower=0
+oft=0
+hogl=0
+texti=input("Sláðu inn texta ")
+for i in (texti):
+    if i.isupper():
+        upper+=1
+        if texti[oft+1].islower():
+            hogl+=1
+    if i.islower():
+        lower+=1
+    oft+=1
+print(upper,"Hástafir")
+print(lower,"Lágstafir")
+print(hogl,"Lágstafir strax á eftir hástöfum")
